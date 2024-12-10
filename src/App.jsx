@@ -1,10 +1,14 @@
 import './App.css'
+import Navbar from './components/Navbar.jsx'
+
 
 function App() {
   
   return (
     <>
-      <div>Hello how are you</div>
+      <div>
+        <Navbar />
+      </div>
     </>
   )
 }

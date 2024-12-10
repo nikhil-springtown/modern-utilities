@@ -9,90 +9,69 @@ const Footer = ({ t }) => {
   };
 
   return (
-    <footer style={{ backgroundColor: '#1a1a1a', color: '#fff', padding: '2rem 1rem' }}>
-      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+    <footer className="bg-gray-900 text-white py-8 px-4">
+      <div className="max-w-screen-xl mx-auto">
         <Row gutter={[16, 16]} justify="space-between">
           <Col xs={24} sm={12} md={8}>
-            <h3 style={{ fontSize: '18px', marginBottom: '1rem' }}>{t('Contact')}</h3>
-            <p style={{ marginBottom: '1rem' }}>{t('Do you have any questions? Feel free to reach out.')}</p>
-            <a
-              href="mailto:l.qqbadze@gmail.com"
-              style={{ color: '#00bfff', textDecoration: 'none' }}
-            >
+            <h3 className="text-lg font-bold mb-4">{t('Contact')}</h3>
+            <p className="mb-4">{t('Do you have any questions? Feel free to reach out.')}</p>
+            <a href="mailto:l.qqbadze@gmail.com" className="text-cyan-400 hover:text-cyan-300">
               {t('Let\'s Chat')}
             </a>
           </Col>
           <Col xs={24} sm={12} md={8}>
-            <h3 style={{ fontSize: '18px', marginBottom: '1rem' }}>{t('Policy')}</h3>
-            <p style={{ marginBottom: '0.5rem' }}>{t('Application Security')}</p>
-            <p style={{ marginBottom: '0.5rem' }}>{t('Software Principles')}</p>
+            <h3 className="text-lg font-bold mb-4">{t('Policy')}</h3>
+            <p className="mb-2">{t('Application Security')}</p>
+            <p className="mb-2">{t('Software Principles')}</p>
           </Col>
           <Col xs={24} sm={12} md={8}>
-            <h3 style={{ fontSize: '18px', marginBottom: '1rem' }}>{t('Support')}</h3>
-            <p style={{ marginBottom: '0.5rem' }}>{t('Support Center')}</p>
-            <p style={{ marginBottom: '0.5rem' }}>{t('Customer Support')}</p>
+            <h3 className="text-lg font-bold mb-4">{t('Support')}</h3>
+            <p className="mb-2">{t('Support Center')}</p>
+            <p className="mb-2">{t('Customer Support')}</p>
           </Col>
         </Row>
-        <Row gutter={[16, 16]} justify="space-between" style={{ marginTop: '2rem' }}>
+
+        <Row gutter={[16, 16]} justify="space-between" className="mt-8">
           <Col xs={24} sm={12} md={8}>
-            <h3 style={{ fontSize: '18px', marginBottom: '1rem' }}>{t('Address')}</h3>
-            <p style={{ marginBottom: '0.5rem' }}>Rancho Santa Margarita</p>
-            <p style={{ marginBottom: '0.5rem' }}>2131 Elk Street</p>
+            <h3 className="text-lg font-bold mb-4">{t('Address')}</h3>
+            <p className="mb-2">Rancho Santa Margarita</p>
+            <p className="mb-2">2131 Elk Street</p>
             <p>California</p>
           </Col>
           <Col xs={24} sm={12} md={8}>
-            <h3 style={{ fontSize: '18px', marginBottom: '1rem' }}>{t('Company')}</h3>
-            <p style={{ marginBottom: '0.5rem' }}>{t('About')}</p>
-            <p style={{ marginBottom: '0.5rem' }}>{t('Blog')}</p>
-            <p style={{ marginBottom: '0.5rem' }}>{t('Press')}</p>
+            <h3 className="text-lg font-bold mb-4">{t('Company')}</h3>
+            <p className="mb-2">{t('About')}</p>
+            <p className="mb-2">{t('Blog')}</p>
+            <p className="mb-2">{t('Press')}</p>
             <p>{t('Careers & Culture')}</p>
           </Col>
           <Col xs={24} sm={12} md={8}>
-            <h3 style={{ fontSize: '18px', marginBottom: '1rem' }}>{t('Language')}</h3>
-            <button
-              onClick={() => handleChange('en')}
-              style={{
-                marginRight: '10px',
-                background: 'none',
-                border: '1px solid #fff',
-                color: '#fff',
-                padding: '5px 10px',
-                borderRadius: '5px',
-                cursor: 'pointer',
-              }}
-            >
-              English
-            </button>
-            <button
-              onClick={() => handleChange('es')}
-              style={{
-                background: 'none',
-                border: '1px solid #fff',
-                color: '#fff',
-                padding: '5px 10px',
-                borderRadius: '5px',
-                cursor: 'pointer',
-              }}
-            >
-              Español
-            </button>
+            <h3 className="text-lg font-bold mb-4">{t('Language')}</h3>
+            <div className="space-x-2">
+              <button
+                onClick={() => handleChange('en')}
+                className="bg-transparent border border-white text-white py-2 px-4 rounded-md hover:bg-white hover:text-gray-900 transition duration-300"
+              >
+                English
+              </button>
+              <button
+                onClick={() => handleChange('es')}
+                className="bg-transparent border border-white text-white py-2 px-4 rounded-md hover:bg-white hover:text-gray-900 transition duration-300"
+              >
+                Español
+              </button>
+            </div>
           </Col>
         </Row>
-        <div
-          style={{
-            borderTop: '1px solid #333',
-            marginTop: '2rem',
-            paddingTop: '1rem',
-            textAlign: 'center',
-          }}
-        >
-          <p style={{ marginBottom: '0.5rem' }}>© 2024 Modern Utilities. All rights reserved.</p>
-          <p>
-            <a href="/terms" style={{ color: '#00bfff', textDecoration: 'none' }}>
+
+        <div className="border-t border-gray-700 mt-8 pt-6 text-center">
+          <p className="text-sm mb-2">© 2024 Modern Utilities. All rights reserved.</p>
+          <p className="text-sm">
+            <a href="/terms" className="text-cyan-400 hover:text-cyan-300">
               Terms of Service
             </a>{' '}
             |{' '}
-            <a href="/privacy" style={{ color: '#00bfff', textDecoration: 'none' }}>
+            <a href="/privacy" className="text-cyan-400 hover:text-cyan-300">
               Privacy Policy
             </a>
           </p>

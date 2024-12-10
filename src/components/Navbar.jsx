@@ -72,7 +72,7 @@ const Navbar = () => {
         {/* Logo and Company Name */}
         <div className="flex items-center space-x-3">
           <Lightbulb className="h-8 w-auto sm:h-10 text-primary" />
-          <h1 className="text-xl sm:text-2xl md:text-2xl lg:text-2xl font-bold text-gray-800">
+          <h1 className="text-xl sm:text-6xl md:text-2xl lg:text-2xl font-bold text-gray-800">
             Modern Utilities
           </h1>
         </div>

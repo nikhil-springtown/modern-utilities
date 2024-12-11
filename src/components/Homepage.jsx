@@ -16,7 +16,7 @@ export default function Homepage() {
                 <span className="text-blue-600">Best Service, Affordable Prices</span>
               </h2>
               <p className="text-2xl text-gray-600 max-w-xl">
-                Experience top-notch utility services without breaking the bank. From electricity to water, we've got you covered with our efficient and cost-effective solutions.
+                Experience top-notch utility services without breaking the bank.  Your one-stop shop for internet, moblie/landline service, and TV! For more info about service in your area, DM us or call 702-850-6149...
               </p>
             </div>
 

@@ -1,3 +1,5 @@
+// src/components/ReviewCarousel.jsx
+
 import React, { useEffect, useCallback } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { ChevronLeft, ChevronRight, Star, Quote } from 'lucide-react';
@@ -5,34 +7,119 @@ import { ChevronLeft, ChevronRight, Star, Quote } from 'lucide-react';
 const reviews = [
   {
     id: 1,
-    name: "Alice Johnson",
-    review: "Modern Utilities made my move so much easier. Their affordable electricity plan and quick setup were exactly what I needed!",
+    name: "Brite Ang3l",
+    review: "Best place in Las Vegas to get Internet phone or cable TV service. I highly recommend speaking with Milan or Tom. Veteran owned and operated small business so I love supporting our soldiers.",
     rating: 5,
-    profession: "Marketing Manager"
+    profession: "Customer"
   },
   {
     id: 2,
-    name: "Bob Smith",
-    review: "I'm impressed with their water service. The quality is great, and the price is even better. Highly recommended!",
+    name: "Brite Ang3l",
+    review: "Milan is a great employee and very helpful. He was able to assist me and everything that I needed. Also the lady that also assisted was an amazing service provider. I think you guys so much and I recommend a lot of people go to the service.",
     rating: 4,
-    profession: "Small Business Owner"
+    profession: "Customer"
   },
   {
     id: 3,
-    name: "Carol Davis",
-    review: "The internet package I got from Modern Utilities is fast and reliable. Customer service has been excellent too!",
+    name: "preston howard",
+    review: "Man these people are the real deal. I have never had such a business experience in my life. Milan is sent from the heavens. He is a disabled combat Army veteran that fought for this country and put his life on the line.",
     rating: 5,
-    profession: "Freelance Designer"
+    profession: "Customer"
   },
   {
     id: 4,
-    name: "David Wilson",
-    review: "Their waste management service is efficient and eco-friendly. It's great to see a company that cares about the environment.",
+    name: "Harland Lee",
+    review: "These guys are the best in the business, I promise you. They have ALL providers at the same location. Ask for Milan or Thom. They have been in the business since internet was invented. They know so much, it is unreal.",
     rating: 4,
-    profession: "Environmental Consultant"
+    profession: "Customer"
+  },
+  {
+    id: 5,
+    name: "tae wells",
+    review: "Milan is the Best he’s the 3Cs and the 3Ts cool, calm, collective and on time, task, and target he gets the job done. I never really experienced GREAT CUSTOMER SERVICE until I met him. I highly recommend.",
+    rating: 5,
+    profession: "Customer"
+  },
+  {
+    id: 6,
+    name: "Albert Avila",
+    review: "Modern Utilities is where you want to bring your business to, nothing but professionalism and dedication coming from Milan. I brought my questions and concerns to him hoping that I receive the service we as consumers deserve.",
+    rating: 5,
+    profession: "Customer"
+  },
+  {
+    id: 7,
+    name: "S C",
+    review: "Milan is amazing! He did an excellent job explaining everything with my elderly mother who is not savvy with technology. I would not hesitate to recommend this place to anyone.",
+    rating: 4,
+    profession: "Customer"
+  },
+  {
+    id: 8,
+    name: "Ryn",
+    review: "Milan was awesome, I had a situation and he had me taken care of and on my way in a matter of minutes, and the modem I got worked perfectly. I will go through him for now on for all my CenturyLink needs and issues. Thank you so much.",
+    rating: 5,
+    profession: "Customer"
+  },
+  {
+    id: 9,
+    name: "Scotavo Agostino",
+    review: "I lost my internet service due to a thunderstorm. I called Modern Utilities and they were very helpful, especially Milan. I was up and running with a new system in no time. The customer service was excellent. Milan definitely went the extra miles. Thanks for being so helpful.",
+    rating: 4,
+    profession: "Customer"
+  },
+  {
+    id: 10,
+    name: "Marcos Delucas",
+    review: "I live in Maryland and needed a solution for internet service for my home and my business. I know this company is based in Las Vegas Nevada but they are licensed in all 50 states. I saw one of his YouTube videos and I was inclined.",
+    rating: 3.5,
+    profession: "Customer"
+  },
+  {
+    id: 11,
+    name: "Mary Agnes Barreras",
+    review: "This is by far the best place ever to do business if you need internet service, cable TV, phone (mobile, VoIP, landline, they do it all). They have multiple providers under the same roof but I believe their primary deal with T-mobile",
+    rating: 5,
+    profession: "Customer"
+  },
+  {
+    id: 12,
+    name: "Bev Oskilanec",
+    review: "After a very rude phone tech that tried to upsell services to me, I went into the office and spoke with Milan. He was great, went above and beyond for me to get my billing sorted out. I will recommend him to anyone and everyone. Don't sit on the phone with tech yourself, Milan can get it done.",
+    rating: 5,
+    profession: "Customer"
   },
 ];
 
+// ReviewCard Component
+const ReviewCard = ({ name, review, rating, profession }) => {
+  return (
+    <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+      <div className="flex items-start mb-4">
+        <Quote className="w-8 h-8 text-blue-400 mr-3 opacity-50" />
+        <div className="flex">
+          {[...Array(5)].map((_, i) => (
+            <Star
+              key={i}
+              className={`w-5 h-5 ${i < Math.floor(rating) ? 'text-yellow-400' : i < rating ? 'text-yellow-400/50' : 'text-gray-300'}`}
+            />
+          ))}
+        </div>
+      </div>
+      <p className="text-gray-700 mb-4 italic flex-grow overflow-hidden">
+        "{review}"
+      </p>
+      <div className="flex items-center mt-4">
+        <div>
+          <p className="font-semibold text-blue-600">{name}</p>
+          <p className="text-sm text-gray-500">{profession}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// ReviewCarousel Component
 export default function ReviewCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ 
     loop: true,
@@ -80,35 +167,13 @@ export default function ReviewCarousel() {
                   key={review.id} 
                   className="flex-shrink-0 w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] px-4"
                 >
-                  <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group">
-                    <div className="flex items-start mb-4">
-                      <Quote className="w-8 h-8 text-blue-400 mr-3 opacity-50" />
-                      <div className="flex">
-                        {[...Array(5)].map((_, i) => (
-                          <Star
-                            key={i}
-                            className={`w-5 h-5 ${i < review.rating ? 'text-yellow-400' : 'text-gray-300'}`}
-                          />
-                        ))}
-                      </div>
-                    </div>
-                    <p className="text-gray-700 mb-4 italic group-hover:text-gray-900 transition-colors">
-                      "{review.review}"
-                    </p>
-                    <div className="flex items-center">
-                      <div>
-                        <p className="font-semibold text-blue-600">{review.name}</p>
-                        <p className="text-sm text-gray-500">{review.profession}</p>
-                      </div>
-                    </div>
-                  </div>
+                  <ReviewCard {...review} />
                 </div>
               ))}
             </div>
           </div>
 
           {/* Navigation Buttons */}
-          {/* Previous Button */}
           <button
             className="hidden md:flex absolute left-[-60px] top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none transition-all duration-300"
             onClick={scrollPrev}
@@ -117,7 +182,6 @@ export default function ReviewCarousel() {
             <ChevronLeft className="h-6 w-6" />
           </button>
           
-          {/* Next Button */}
           <button
             className="hidden md:flex absolute right-[-60px] top-1/2 transform -translate-y-1/2 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none transition-all duration-300"
             onClick={scrollNext}

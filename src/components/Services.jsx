@@ -1,45 +1,45 @@
 // src/components/Services.jsx
 
 import React from 'react';
-import { Zap, Droplet, Wind, Wifi, Phone, Trash } from 'lucide-react';
+import { Wifi, Smartphone, Phone, Tv, Home } from 'lucide-react';
 
 // Service data array
 const services = [
   {
-    name: "Electricity",
-    description: "Reliable power supply for your home.",
-    icon: Zap,
-    price: "Affordable rates starting at $0.10/kWh",
-  },
-  {
-    name: "Water",
-    description: "Clean and safe water delivery.",
-    icon: Droplet,
-    price: "Low-cost plans from $20/month",
-  },
-  {
-    name: "Gas",
-    description: "Efficient natural gas service.",
-    icon: Wind,
-    price: "Competitive pricing at $0.80/therm",
-  },
-  {
     name: "Internet",
-    description: "High-speed fiber optic internet.",
+    description: "High-speed fiber optic internet for seamless connectivity.",
     icon: Wifi,
     price: "Fast connections from $39.99/month",
   },
   {
-    name: "Phone",
-    description: "Crystal-clear landline service.",
-    icon: Phone,
-    price: "Plans starting at just $9.99/month",
+    name: "Mobile",
+    description: "Flexible mobile plans with nationwide coverage.",
+    icon: Smartphone,
+    price: "Plans starting at $19.99/month",
   },
   {
-    name: "Waste Management",
-    description: "Efficient waste collection and recycling.",
-    icon: Trash,
-    price: "Eco-friendly service from $15/month",
+    name: "Landline",
+    description: "Crystal-clear landline service for reliable communication.",
+    icon: Phone,
+    price: "Affordable rates starting at $9.99/month",
+  },
+  {
+    name: "TV",
+    description: "Access to a wide range of channels and on-demand content.",
+    icon: Tv,
+    price: "Plans from $29.99/month",
+  },
+  {
+    name: "Cable TV",
+    description: "Premium cable TV packages with HD quality.",
+    icon: Tv,
+    price: "Packages starting at $49.99/month",
+  },
+  {
+    name: "Smart Home Services",
+    description: "Enhance your home with smart devices and automation.",
+    icon: Home,
+    price: "Solutions from $59.99/month",
   },
 ];
 
@@ -76,7 +76,7 @@ export default function Services() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-extrabold text-gray-900 mb-4">Explore Our Most Popular Services</h2>
           <p className="text-2xl text-gray-600">
-            We offer a wide range of utility services to make your move to a new home seamless and stress-free.
+          Your one-stop shop for internet, moblie/landline service, and TV! For more info about service in your area, DM us or call 702-850-6149...We offer a wide range of utility services to make your move to a new home seamless and stress-free.
           </p>
         </div>
         

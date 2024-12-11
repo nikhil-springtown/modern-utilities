@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import img2 from "../assets/img2.jpg";  // Ensure the path is correct
+import img2 from "../assets/image.png";  // Ensure the path is correct
 
 export default function Packagesection() {
   return (

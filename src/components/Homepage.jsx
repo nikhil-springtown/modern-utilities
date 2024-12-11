@@ -11,12 +11,11 @@ export default function Homepage() {
           <div className="space-y-8 order-last lg:order-first">  {/* Ensure correct order on mobile and desktop */}
             {/* Header */}
             <div>
-              <p className="text-2xl font-semibold text-blue-600 mb-4">Welcome to</p>
               <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight mb-6">
                 Modern Utilities <br className="hidden sm:block" />
                 <span className="text-blue-600">Best Service, Affordable Prices</span>
               </h2>
-              <p className="text-lg text-gray-600 max-w-xl">
+              <p className="text-2xl text-gray-600 max-w-xl">
                 Experience top-notch utility services without breaking the bank. From electricity to water, we've got you covered with our efficient and cost-effective solutions.
               </p>
             </div>

@@ -22,11 +22,10 @@ export default function Packagesection() {
           <div className="space-y-8">
             {/* Header */}
             <div>
-              <p className="text-2xl font-semibold text-blue-600 mb-4">Innovate</p>
               <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-4">
                 Transforming Utilities for a Modern World
               </h2>
-              <p className="text-gray-600 text-lg">
+              <p className="text-gray-600 text-2xl">
                 At Modern Utilities, we specialize in innovative solutions that enhance your daily life. Our commitment to sustainability and efficiency sets us apart in the utility sector.
               </p>
             </div>
@@ -34,14 +33,14 @@ export default function Packagesection() {
             {/* Features */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Smart Solutions</h3>
-                <p className="text-gray-600">
+                <h3 className="text-3xl font-semibold text-gray-900 mb-2">Smart Solutions</h3>
+                <p className="text-gray-600 text-1xl">
                   Empowering communities with cutting-edge technology and reliable utility services.
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Sustainable Practices</h3>
-                <p className="text-gray-600">
+                <h3 className="text-3xl font-semibold text-gray-900 mb-2">Sustainable Practices</h3>
+                <p className="text-gray-600 text-1xl">
                   Dedicated to eco-friendly solutions that benefit both you and the environment.
                 </p>
               </div>
@@ -49,12 +48,15 @@ export default function Packagesection() {
 
             {/* Call to Action Buttons */}
             <div className="flex flex-col sm:flex-row sm:justify-start gap-4">
-              <button className="flex items-center justify-center bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300 shadow-md">
+            <button className="w-full sm:w-auto py-4 px-8 text-white bg-blue-600 hover:bg-blue-700 rounded-lg text-lg font-semibold 
+                transition duration-300 ease-in-out shadow-md hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                 Explore
               </button>
-              <button className="flex items-center justify-center bg-white text-blue-600 border-2 border-blue-600 py-3 px-6 rounded-lg hover:bg-blue-50 transition-colors duration-300 shadow-md">
+              <button className="w-full sm:w-auto py-4 px-8 text-blue-600 bg-white border-2 border-blue-600 
+                hover:bg-blue-50 rounded-lg text-lg font-semibold 
+                transition duration-300 ease-in-out shadow-md hover:scale-105 
+                focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                 Learn More
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </button>
             </div>
           </div>

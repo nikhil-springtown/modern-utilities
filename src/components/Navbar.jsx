@@ -32,7 +32,7 @@ const Navbar = () => {
         className="flex items-center text-blue-600 hover:text-blue-800 transition-colors 
         px-4 py-2 rounded-md text-base font-medium"
       >
-        <Home className="mr-2" size={20} />
+        <Home className="mr-2" size={30} />
         Home
       </a>
       <a 
@@ -40,7 +40,7 @@ const Navbar = () => {
         className="flex items-center text-blue-600 hover:text-blue-800 transition-colors 
         px-4 py-2 rounded-md text-base font-medium"
       >
-        <Menu className="mr-2" size={20} />
+        <Menu className="mr-2" size={30} />
         Services
       </a>
       <a 
@@ -48,7 +48,7 @@ const Navbar = () => {
         className="flex items-center text-blue-600 hover:text-blue-800 transition-colors 
         px-4 py-2 rounded-md text-base font-medium"
       >
-        <Phone className="mr-2" size={20} />
+        <Phone className="mr-2" size={30} />
         Contact
       </a>
       <a 
@@ -56,7 +56,7 @@ const Navbar = () => {
         className="flex items-center text-blue-600 hover:text-blue-800 transition-colors 
         px-4 py-2 rounded-md text-base font-medium"
       >
-        <Info className="mr-2" size={20} />
+        <Info className="mr-2" size={30} />
         About
       </a>
     </>
@@ -101,12 +101,10 @@ const Navbar = () => {
                     {NavigationLinks()}
                     {/* Mobile Get Started Button */}
                     <div className="mt-4">
-                      <a 
-                        href="/get-started" 
-                        className="w-full block text-center bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-800 transition-colors"
-                      >
-                        Get Started
-                      </a>
+                    <button className="w-full sm:w-auto py-4 px-8 text-white bg-blue-600 hover:bg-blue-700 rounded-lg text-lg font-semibold 
+                transition duration-300 ease-in-out shadow-md hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                Get Started
+              </button>
                     </div>
                   </nav>
                 </div>
@@ -123,12 +121,10 @@ const Navbar = () => {
 
             {/* Desktop Get Started Button */}
             <div className="flex items-center">
-              <a 
-                href="/get-started" 
-                className="block text-center bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-800 transition-colors"
-              >
+            <button className="w-full sm:w-auto py-4 px-8 text-white bg-blue-600 hover:bg-blue-700 rounded-lg text-lg font-semibold 
+                transition duration-300 ease-in-out shadow-md hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                 Get Started
-              </a>
+              </button>
             </div>
           </div>
         )}

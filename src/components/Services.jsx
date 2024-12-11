@@ -59,9 +59,9 @@ const ServiceCard = ({ name, description, icon: Icon, price }) => {
         {/* Price */}
         <p className="text-lg font-bold text-blue-600 mb-10">{price}</p>
         {/* Call to Action Button */}
-        <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+        {/* <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300">
           Learn More
-        </button>
+        </button> */}
       </div>
     </div>
   );

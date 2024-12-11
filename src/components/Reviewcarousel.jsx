@@ -94,14 +94,14 @@ const reviews = [
 // ReviewCard Component
 const ReviewCard = ({ name, review, rating, profession }) => {
   return (
-    <div className="p-6 rounded-xl shadow-2xl hover:shadow-4xl transition-shadow duration-300 flex flex-col h-full">
-      <div className="flex items-start mb-4">
+    <div className="p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+      <div className="flex items-start mb-4 ">
         <Quote className="w-8 h-8 text-blue-400 mr-3 opacity-50" />
         <div className="flex">
           {[...Array(5)].map((_, i) => (
             <Star
               key={i}
-              className={`w-5 h-5 ${i < Math.floor(rating) ? 'text-yellow-400' : i < rating ? 'text-yellow-400/50' : 'text-gray-300'}`}
+              className={`w-5 h-5 ${i < Math.floor(rating) ? 'text-yellow-400 fill-yellow-400' : i < rating ? 'text-yellow-400/50' : 'text-gray-300'}`}
             />
           ))}
         </div>
@@ -161,7 +161,7 @@ export default function ReviewCarousel() {
         <div className="relative">
           {/* Carousel */}
           <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex gap-6">
+            <div className="flex gap-6 p-3">
               {reviews.map((review) => (
                 <div 
                   key={review.id} 

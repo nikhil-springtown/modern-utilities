@@ -65,7 +65,7 @@ export default function ReviewCarousel() {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Testimonials
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-gray-600 text-2xl max-w-2xl mx-auto">
             Hear from our satisfied customers who have experienced the Modern Utilities difference.
           </p>
         </div>

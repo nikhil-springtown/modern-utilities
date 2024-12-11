@@ -53,11 +53,11 @@ const ServiceCard = ({ name, description, icon: Icon, price }) => {
           <Icon className="w-8 h-8 text-blue-600" />
         </div>
         {/* Service Name */}
-        <h3 className="text-xl font-semibold text-gray-900 mb-2">{name}</h3>
+        <h3 className="text-2xl font-bold text-gray-900 mb-2">{name}</h3>
         {/* Service Description */}
-        <p className="text-gray-600 mb-4">{description}</p>
+        <p className="text-gray-600 font-semibold mb-6">{description}</p>
         {/* Price */}
-        <p className="text-lg font-bold text-blue-600 mb-6">{price}</p>
+        <p className="text-lg font-bold text-blue-600 mb-10">{price}</p>
         {/* Call to Action Button */}
         <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300">
           Learn More
@@ -75,7 +75,7 @@ export default function Services() {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-extrabold text-gray-900 mb-4">Explore Our Most Popular Services</h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-2xl text-gray-600">
             We offer a wide range of utility services to make your move to a new home seamless and stress-free.
           </p>
         </div>

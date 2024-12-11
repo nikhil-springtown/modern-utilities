@@ -79,7 +79,7 @@ const Navbar = () => {
             {/* Mobile Menu Toggle */}
             <button 
               onClick={toggleMenu} 
-              className="text-blue-600 focus:outline-none"
+              className="text-black focus:outline-none"
             >
               <Menu size={24} />
             </button>
@@ -89,10 +89,10 @@ const Navbar = () => {
               <div className="fixed inset-0 bg-white z-50">
                 <div className="container mx-auto px-4 py-6">
                   <div className="flex justify-between items-center mb-8">
-                    <h1 className="text-2xl font-bold text-blue-600">Modern Utilities</h1>
+                    <h1 className="text-2xl font-bold text-black">Modern Utilities</h1>
                     <button 
                       onClick={toggleMenu} 
-                      className="text-blue-600 focus:outline-none"
+                      className="text-black focus:outline-none"
                     >
                       <X size={24} />
                     </button>

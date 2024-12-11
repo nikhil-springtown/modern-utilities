@@ -13,10 +13,10 @@ export default function Homepage() {
             <div>
               <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight mb-6">
                 Modern Utilities <br className="hidden sm:block" />
-                <span className="text-blue-600">Best Service, Affordable Prices</span>
+                <span className="text-blue-600">Best Services, Affordable Prices</span>
               </h2>
               <p className="text-2xl text-gray-600 max-w-xl">
-                Experience top-notch utility services without breaking the bank.  Your one-stop shop for internet, moblie/landline service, and TV! For more info about service in your area, DM us or call 702-850-6149...
+                Experience top-notch utility services without breaking the bank.  Your one-stop shop for internet, moblie/landline service, and TV!
               </p>
             </div>
 

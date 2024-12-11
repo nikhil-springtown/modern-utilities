@@ -56,7 +56,7 @@ export default function Packagesection() {
                 hover:bg-blue-50 rounded-lg text-lg font-semibold 
                 transition duration-300 ease-in-out shadow-md hover:scale-105 
                 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                Learn More
+                Contact Us
               </button>
             </div>
           </div>

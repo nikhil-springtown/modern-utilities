@@ -3,46 +3,48 @@ import img1 from "../assets/img1.jpg";  // Ensure the path is correct
 
 export default function Homepage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 pt-10">
-      <div className="mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-24">
-        <div className="flex flex-col-reverse lg:flex-row items-center lg:justify-between gap-8 lg:gap-16">
+    <div className="bg-white pt-32 pb-16 md:pt-40 lg:pt-48">  {/* Increased top padding for navbar separation */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-16">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          
+          {/* Content Section (Left Side on Large Screens) */}
+          <div className="space-y-8 order-last lg:order-first">  {/* Ensure correct order on mobile and desktop */}
+            {/* Header */}
+            <div>
+              <p className="text-2xl font-semibold text-blue-600 mb-4">Welcome to</p>
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight mb-6">
+                Modern Utilities <br className="hidden sm:block" />
+                <span className="text-blue-600">Best Service, Affordable Prices</span>
+              </h2>
+              <p className="text-lg text-gray-600 max-w-xl">
+                Experience top-notch utility services without breaking the bank. From electricity to water, we've got you covered with our efficient and cost-effective solutions.
+              </p>
+            </div>
 
-          {/* Text Section (on left side on large screens) */}
-          <div className="w-full lg:w-1/2 text-center lg:text-left">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 tracking-tight">
-              <span className="block">Modern Utilities</span>
-              <span className="block text-indigo-600">Best Service, Affordable Prices</span>
-            </h1>
-            <p className="mt-4 sm:mt-6 text-lg sm:text-xl text-gray-600 sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-              Experience top-notch utility services without breaking the bank. From electricity to water, we've got you covered with our efficient and cost-effective solutions.
-            </p>
-
-            {/* Buttons Section */}
-            <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-6">
-              {/* Get Started Button */}
-              <button className="w-full sm:w-auto py-4 px-8 text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg text-lg font-semibold transition transform duration-300 ease-in-out shadow-lg hover:scale-105">
+            {/* Call to Action Buttons */}
+            <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+              <button className="w-full sm:w-auto py-4 px-8 text-white bg-blue-600 hover:bg-blue-700 rounded-lg text-lg font-semibold 
+                transition duration-300 ease-in-out shadow-md hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                 Get Started
               </button>
-              
-              {/* Learn More Button */}
-              <button className="w-full sm:w-auto py-4 px-8 text-indigo-600 bg-white border-2 border-indigo-600 hover:bg-indigo-50 rounded-lg text-lg font-semibold transition transform duration-300 ease-in-out shadow-lg hover:scale-105">
+              <button className="w-full sm:w-auto py-4 px-8 text-blue-600 bg-white border-2 border-blue-600 
+                hover:bg-blue-50 rounded-lg text-lg font-semibold 
+                transition duration-300 ease-in-out shadow-md hover:scale-105 
+                focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                 Learn More
               </button>
             </div>
           </div>
 
-          {/* Image Section (on right side on large screens) */}
-          <div className="w-full lg:w-1/2 relative mt-8 lg:mt-0">
-            <div className="aspect-w-16 aspect-h-9 sm:aspect-w-4 sm:aspect-h-3 md:aspect-w-3 md:aspect-h-2 lg:aspect-w-16 lg:aspect-h-9 rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105">
-              <img
-                src={img1}
-                alt="Modern city utilities"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black opacity-40 rounded-lg"></div>
-            </div>
+          {/* Image Section (Right Side on Large Screens) */}
+          <div className="relative w-full h-80 sm:h-96 lg:h-[500px] xl:h-[600px] rounded-2xl overflow-hidden group">
+            <img
+              src={img1}
+              alt="Modern city utilities"
+              className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-blue-600 via-transparent to-transparent opacity-30 rounded-2xl"></div>
           </div>
-
         </div>
       </div>
     </div>

@@ -49,17 +49,17 @@ const ServiceCard = ({ name, description, icon: Icon, price }) => {
     <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
       <div className="p-6 flex flex-col items-center text-center">
         {/* Icon */}
-        <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
-          <Icon className="w-8 h-8 text-indigo-600" />
+        <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+          <Icon className="w-8 h-8 text-blue-600" />
         </div>
         {/* Service Name */}
-        <h3 className="text-xl font-semibold text-gray-800 mb-2">{name}</h3>
+        <h3 className="text-xl font-semibold text-gray-900 mb-2">{name}</h3>
         {/* Service Description */}
         <p className="text-gray-600 mb-4">{description}</p>
         {/* Price */}
-        <p className="text-lg font-bold text-indigo-600 mb-6">{price}</p>
+        <p className="text-lg font-bold text-blue-600 mb-6">{price}</p>
         {/* Call to Action Button */}
-        <button className="w-full bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors duration-300">
+        <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-300">
           Learn More
         </button>
       </div>
@@ -74,7 +74,7 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-extrabold text-gray-900 mb-4">Explore our most used Services</h2>
+          <h2 className="text-3xl font-extrabold text-gray-900 mb-4">Explore Our Most Popular Services</h2>
           <p className="text-lg text-gray-600">
             We offer a wide range of utility services to make your move to a new home seamless and stress-free.
           </p>

@@ -45,23 +45,6 @@ const Footer = ({ t }) => {
             <p className="mb-2">{t('Press')}</p>
             <p>{t('Careers & Culture')}</p>
           </Col>
-          <Col xs={24} sm={12} md={8}>
-            <h3 className="text-lg font-bold mb-4">{t('Language')}</h3>
-            <div className="space-x-2">
-              <button
-                onClick={() => handleChange('en')}
-                className="bg-transparent border border-white text-white py-2 px-4 rounded-md hover:bg-white hover:text-gray-900 transition duration-300"
-              >
-                English
-              </button>
-              <button
-                onClick={() => handleChange('es')}
-                className="bg-transparent border border-white text-white py-2 px-4 rounded-md hover:bg-white hover:text-gray-900 transition duration-300"
-              >
-                Español
-              </button>
-            </div>
-          </Col>
         </Row>
 
         <div className="border-t border-gray-700 mt-8 pt-6 text-center">

@@ -36,7 +36,7 @@ const Navbar = () => {
         Home
       </a>
       <a 
-        href="/services" 
+        href="#services" 
         className="flex items-center text-blue-600 hover:text-blue-800 transition-colors 
         px-4 py-2 rounded-md text-base font-medium"
       >

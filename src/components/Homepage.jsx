@@ -26,12 +26,12 @@ export default function Homepage() {
                 transition duration-300 ease-in-out shadow-md hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                 Get Started
               </button>
-              <button className="w-full sm:w-auto py-4 px-8 text-blue-600 bg-white border-2 border-blue-600 
+              {/* <button className="w-full sm:w-auto py-4 px-8 text-blue-600 bg-white border-2 border-blue-600 
                 hover:bg-blue-50 rounded-lg text-lg font-semibold 
                 transition duration-300 ease-in-out shadow-md hover:scale-105 
                 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                 Learn More
-              </button>
+              </button> */}
             </div>
           </div>
 

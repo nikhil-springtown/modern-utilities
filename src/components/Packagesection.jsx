@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import img2 from "../assets/image.png";  // Ensure the path is correct
+import img2 from "../assets/img3.jpg";  // Ensure the path is correct
 
 export default function Packagesection() {
   return (
@@ -34,13 +34,13 @@ export default function Packagesection() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
                 <h3 className="text-3xl font-semibold text-gray-900 mb-2">Smart Solutions</h3>
-                <p className="text-gray-600 text-1xl">
+                <p className="text-gray-600 text-lg">
                   Empowering communities with cutting-edge technology and reliable utility services.
                 </p>
               </div>
               <div>
                 <h3 className="text-3xl font-semibold text-gray-900 mb-2">Sustainable Practices</h3>
-                <p className="text-gray-600 text-1xl">
+                <p className="text-gray-600 text-lg">
                   Dedicated to eco-friendly solutions that benefit both you and the environment.
                 </p>
               </div>

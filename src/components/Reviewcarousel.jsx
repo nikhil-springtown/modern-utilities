@@ -94,7 +94,7 @@ const reviews = [
 // ReviewCard Component
 const ReviewCard = ({ name, review, rating, profession }) => {
   return (
-    <div className="bg-blue-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+    <div className="p-6 rounded-xl shadow-2xl hover:shadow-4xl transition-shadow duration-300 flex flex-col h-full">
       <div className="flex items-start mb-4">
         <Quote className="w-8 h-8 text-blue-400 mr-3 opacity-50" />
         <div className="flex">
